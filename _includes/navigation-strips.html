@@ -1,0 +1,13 @@
+<div class="left"> 
+{% if page.previous.url %} 
+	<a href="{{page.previous.url}}" title="Previous Post:{{page.previous.title}}">&larr; Previous</a> 
+{% endif %} 
+</div>
+
+<!--	        <a href="/archive/">| Strip Archives |</a> -->
+
+<div class="right"> 
+{% if page.next.url %} 
+	<a href="{{page.next.url}}" title="next Post:{{page.next.title}}">Next &rarr;</a> 
+{% endif %} 
+</div> 

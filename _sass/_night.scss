@@ -1,0 +1,97 @@
+/* @group x-sass -------------------------------------------------- */
+
+/* Layout handled by Gridsetapp: gridsetapp.com. See gridset.css & gridset-ie.css */
+
+$k0: #FFFFFF;
+$k3: #F7F7F7;
+$k5: #F2F2F2;
+$k10: #E6E6E6;
+$k20: #CCCCCC;
+$k30: #B3B3B3;
+$k40: #999999;
+$k50: #808080;
+$k60: #666666;
+$k70: #4D4D4D;
+$k80: #333333;
+$k90: #1A1A1A;
+$k100: #000000;
+
+html {
+	background-color: $k100;
+}
+
+/* @end x-sass -------------------------------------------------- */
+
+/* @group x-type -------------------------------------------------- */
+
+h1 {
+	color: $k50;
+}
+
+p, ol, ul, li {
+	color: $k50;
+}
+
+/*html.wf-vinyl1-i4-active body div.wrapper section.d2-d4 p {
+	max-width: 33em;	
+}*/
+
+/* @end x-type -------------------------------------------------- */
+
+/* @group x-links -------------------------------------------------- */
+
+/*a.image-border {
+	border: 0 none;
+	text-decoration: none;
+}*/
+
+a:link.active {
+	color: $k5;
+	border-color: $k5;
+	background-color: $k80;
+}
+
+
+a:link {
+	color: $k30;
+	border-color: $k80;
+/*	background-color: $k80;*/
+}
+
+a:visited {
+	color: $k30;
+	border-color: $k40;
+/*	background-color: $k80;*/
+}
+
+a:hover {
+	color: $k10;
+	border-color: $k10;
+/*	background-color: $k70;*/
+}
+
+a:active {
+	border-color: $k0;
+	color: $k0;
+/*	background-color: $k60;*/
+}
+
+/* @end x-links -------------------------------------------------- */
+
+@media only screen and (min-width:1100px) {
+
+
+.wrapper {
+	outline: $k100 solid thin;
+	outline-width: 3em;
+	background-color: $k100;
+	padding-top: 2em;
+	border: 1px solid $k100; /*removes mystery 1 pixel line on left side in FF*/
+}
+
+html {
+	background-color: $k0;
+}
+
+
+}

@@ -1,0 +1,17 @@
+/* TEAM */
+	Creator/Writer/Illustrator and Designer/Developer : Rodney Pruitt
+	Twitter: @thepru
+
+/* SITE */
+	Language: English
+	Doctype: HTML5
+	IDE: Espresso (macrabbit.com)
+	CMS: Jekyll (jekyllrb.com)
+	Assets: Photoshop and Illustrator
+	Source at Github: https://github.com/thepru/publichouse
+	Credits/Tech Notes: Fonts via Typekit, Grid via Gridsetapp(.com), Future slideshow based strips will use Slider via Chris Ferdinandi (https://github.com/cferdinandi/slider).
+
+/* Art */
+	Art was mostly drawn on Strathmore bristol board with FW India Ink using an assortment of dip pens and Winsor Newton Natural Paint Brushes.
+	
+	Writing is done by hand on scrap paper, and various iOS and Mac OSX apps using Dropbox. Some of these include NVAlt, IA Writer, Espresso etc. (OSX); Nebulous Notes, IA Writer, Drafts app. etc. (iOS).
