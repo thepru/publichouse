@@ -2,5 +2,5 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-_deploy.command
+_deployConfig.txt
 *.DS_Store
