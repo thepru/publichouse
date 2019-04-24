@@ -14,3 +14,6 @@ author:              the Pru
 site_name: 'Public House'
 site_url: 'https://thepublichouse.net'
 copyright: '2019'
+
+# Server Config options
+livereload: true     # You no longer need to include --livereload
