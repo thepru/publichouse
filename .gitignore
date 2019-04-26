@@ -2,6 +2,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-.code-workspace
+*.code-workspace
 _deployConfig.txt
 *.DS_Store
