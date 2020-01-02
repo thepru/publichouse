@@ -9,7 +9,7 @@ tagline:             No Tagline
 url:                 https://thepublichouse.net
 permalink:           /:year/:month/:day/:title
 baseurl:             ""
-author:              the Pru
+author:              thepru
 
 site_name: 'Public House'
 site_url: 'https://thepublichouse.net'
