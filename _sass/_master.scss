@@ -60,6 +60,12 @@ $test: red;
 	position: absolute;
 }
 
+a.top {
+	font-size: 66%;
+	border-bottom-style: none !important;
+	border-color: transparent !important;
+}
+
 html {
 	background-color: $k0;
 }
