@@ -27,12 +27,12 @@ group: "navigation"
   {% for post in site.posts %}
 
     {% unless post.next %}
-      <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a href="#main">&uarr;</a></h3>
+      <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a class="top" href="#main"><sup>&uarr;</sup></a></h3>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a href="#main">&uarr;</a></h3>
+        <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a class="top" href="#main"><sup>&uarr;</sup></a></h3>
       {% endif %}
     {% endunless %}
 

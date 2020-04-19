@@ -9,11 +9,11 @@ tagline:             No Tagline
 url:                 https://thepublichouse.net
 permalink:           /:year/:month/:day/:title
 baseurl:             ""
-author:              the Pru
+author:              thepru
 
 site_name: 'Public House'
 site_url: 'https://thepublichouse.net'
-copyright: '2019'
+copyright: '2020'
 
 # Server Config options
 livereload: true     # You no longer need to include --livereload
