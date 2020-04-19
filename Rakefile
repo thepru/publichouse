@@ -20,5 +20,6 @@ end
 
 desc 'rsync to web'
 task :web => [] do
-   sh "sh .deploy-web.sh"
+   # sh "sh .deploy-web.sh"
+   sh "rake build && . _deployConfig.txt && rsync -avz -e ssh _site/ --delete $remotePath
 end
