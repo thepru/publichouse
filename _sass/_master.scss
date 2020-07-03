@@ -49,6 +49,23 @@ $test: red;
 	outline: $test solid thin;
 }*/
 
+.script {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+a.top {
+	font-size: 66%;
+	border-bottom-style: none !important;
+	border-color: transparent !important;
+}
+
 html {
 	background-color: $k0;
 }

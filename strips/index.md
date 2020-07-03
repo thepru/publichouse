@@ -8,6 +8,8 @@ group: "navigation"
 <nav class="navArchive">
 	<ul>
 		<li>Go to Year:</li>
+		<li><a href="#2020">2020</a></li>
+		<li><a href="#2018">2018</a></li>
 		<li><a href="#2017">2017</a></li>
 		<li><a href="#2016">2016</a></li>
 		<li><a href="#2015">2015</a></li>
@@ -27,12 +29,12 @@ group: "navigation"
   {% for post in site.posts %}
 
     {% unless post.next %}
-      <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a href="#main">&uarr;</a></h3>
+      <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a class="top" href="#main"><sup>&uarr;</sup></a></h3>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a href="#main">&uarr;</a></h3>
+        <h3 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }} <a class="top" href="#main"><sup>&uarr;</sup></a></h3>
       {% endif %}
     {% endunless %}
 
