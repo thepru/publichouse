@@ -8,6 +8,8 @@ group: "navigation"
 <nav class="navArchive">
 	<ul>
 		<li>Go to Year:</li>
+		<li><a href="#2020">2020</a></li>
+		<li><a href="#2018">2018</a></li>
 		<li><a href="#2017">2017</a></li>
 		<li><a href="#2016">2016</a></li>
 		<li><a href="#2015">2015</a></li>
