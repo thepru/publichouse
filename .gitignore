@@ -1,7 +1,1 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-*.code-workspace
-_deployConfig.txt
-*.DS_Store
+node_modules
