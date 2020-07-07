@@ -1,5 +1,7 @@
-module.exports = config => {
-  config.addPassthroughCopy('./src/img/');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPassthroughCopy('./src/img/');
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
