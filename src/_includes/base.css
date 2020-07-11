@@ -1,5 +1,69 @@
 /* A comment that should be removed by CleanCSS */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: green;
+  max-width: 64rem;
+  margin: auto;
+  padding: 2rem;
+ }
+
+body article * + * {
+  margin-top: 3rem;
+}
+
+img {
+  max-width: 100%;
+}
+ 
+/* Grid Section Definitions */
+
+body article h1     { grid-area : head1; }
+body article h2     { grid-area : head2; }
+body article p      { grid-area : para1; }
+body article img    { grid-area : image; }
+
+
+/* Mobile First */
+
+body article {
+    display: grid;
+    grid-gap: 1rem;
+    row-gap: 0;
+    grid-template-areas:
+    "head1"
+    "para1"
+    "image"
+    "head2"
+    ;
   }
+  
+/* Medium */
+  
+@media (min-width: 40rem) {
+  body article {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "head1 head1 head1 head1"
+      "para1 para1 image image"
+      "head2 head2 head2 head2"
+      ;
+  }
+}
+
+/* Large */
+
+@media (min-width: 64rem) {
+  body article {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "head1 head1 head1 head1 head1 head1"
+      "para1 image image image image image"
+      "head2 head2 head2 head2 head2 head2"
+      ;
+  }
+}
