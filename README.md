@@ -3,7 +3,7 @@ Public House: A comic by [the pru][thepru]
 
 ## This is the 11ty build for my strip.
 
-A better ReadMe to come!!
+A better ReadMe to come!
 
 
 [thepru]: https://twitter.com/thepru "The Pru on Twitter"
