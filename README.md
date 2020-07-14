@@ -1,7 +1,7 @@
 Public House: A comic by [the pru][thepru]
 ===========
 
-## This is the 11ty build for my strip.
+## This is the [11ty](https://www.11ty.dev/) build for my strip.
 
 A better ReadMe coming soon!
 
