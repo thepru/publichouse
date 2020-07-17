@@ -25,7 +25,7 @@ img {
 
 body article h1     { grid-area : head1; }
 body article h2     { grid-area : head2; }
-body article p      { grid-area : para1; }
+body article nav    { grid-area : nav1;  }
 body article img    { grid-area : image; }
 
 
@@ -37,7 +37,7 @@ body article {
     row-gap: 0;
     grid-template-areas:
     "head1"
-    "para1"
+    "nav1"
     "image"
     "head2"
     ;
@@ -50,7 +50,7 @@ body article {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "head1 head1 head1 head1"
-      "para1 para1 image image"
+      "nav1 nav1 image image"
       "head2 head2 head2 head2"
       ;
   }
@@ -63,7 +63,7 @@ body article {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "head1 head1 head1 head1 head1 head1"
-      "para1 image image image image image"
+      "nav1 image image image image image"
       "head2 head2 head2 head2 head2 head2"
       ;
   }
