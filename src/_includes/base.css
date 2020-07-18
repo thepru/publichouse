@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+h1 {
+	color: #333333;
+	font: normal 3em/0.96em "vinyl-1","vinyl-2",sans-serif;
+}
+
+p {
+	font: normal 1.25em/1.5em "skolar-1","skolar-2",serif;
+}
+
 body {
   background-color: lightsteelblue;
   max-width: 64rem;
