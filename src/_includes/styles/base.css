@@ -48,7 +48,7 @@ body {
 
 body article * + * {
   margin-top: 3rem;
-  outline: red solid thick;
+  outline: red thin thick;
 }
 
 img {
@@ -71,9 +71,9 @@ body article {
     row-gap: 0;
     grid-template-areas:
     "head1"
-    "nav1"
-    "image"
     "head2"
+    "image"
+    "nav1"
     ;
   }
   

@@ -4,13 +4,16 @@ bodyclass: "home"
 layout: layouts/home.html
 ---
 
-# Hello.
+<h2>Here are the latest strips:</h2>
 
 <nav>
-<p>Here are the latest strips:</p>
+
 {% set latestStrip = collections.strip | reverse %}
+<ul>
 {% for strip in latestStrip.slice(0,2) %}
-<p><a href=" {{ strip.url | url }}  ">{{ strip.data.title }}</a> - {{ strip.date.toDateString() }}</p>
+<li><a href=" {{ strip.url | url }}  ">{{ strip.data.title }}</a> - {{ strip.date.toDateString() }}</li>
 {% endfor  %}
-<p><a href="/strips/">Archive</a></p>
+<li><a href="/strips/">Archive</a></li>
+</ul>
+
 </nav>
