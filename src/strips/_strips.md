@@ -7,6 +7,6 @@ permalink: "/strips/"
 
 <ul>
 {% for strip in collections.strip | reverse %}
-  <li>{{ strip.data.title }} - {{ strip.date.toDateString() }}</li>
+<li><a href="{{ strip.url | url }}">{{ strip.data.title }}</a> - {{ strip.date.toDateString() }}</li>
 {% endfor %}
 </ul>
