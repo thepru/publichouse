@@ -57,10 +57,9 @@ img {
  
 /* Grid Section Definitions */
 
-body article h1     { grid-area : head1; }
-body article h2     { grid-area : head2; }
-body article nav    { grid-area : nav1;  }
-body article img    { grid-area : image; }
+body article h2      { grid-area : t; }
+body article .strip  { grid-area : s; }
+body article nav     { grid-area : n;  }
 
 
 /* Mobile First */
@@ -69,11 +68,11 @@ body article {
     display: grid;
     grid-gap: 1rem;
     row-gap: 0;
+    grid-row-gap: 0;
     grid-template-areas:
-    "head1"
-    "head2"
-    "image"
-    "nav1"
+    "t"
+    "s"
+    "n"
     ;
   }
   
@@ -83,9 +82,9 @@ body article {
   body article {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "head1 head1 head1 head1"
-      "nav1 nav1 image image"
-      "head2 head2 head2 head2"
+      "t t t t"
+      "s s s s"
+      "n n n n"
       ;
   }
 }
@@ -94,11 +93,11 @@ body article {
 
 @media (min-width: 64rem) {
   body article {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "head1 head1 head1 head1 head1 head1"
-      "nav1 image image image image image"
-      "head2 head2 head2 head2 head2 head2"
+      "t t t t t t t t"
+      "s s s s s s s s"
+      "n n n n n n n n"
       ;
   }
 }

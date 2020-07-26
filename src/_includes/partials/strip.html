@@ -1,6 +1,7 @@
 <h2><a href="/strips/{{ name }}">{{ title }}</a></h2>
 
-<a href="/img/ph{{ name }}.{{ filetype  }}"><img src="/img/ph{{ name }}.{{ filetype }}" alt="Strip image for the strip called {{ title }}"></a>
+<p class="strip"><a href="/img/ph{{ name }}.{{ filetype  }}"><img src="/img/ph{{ name }}.{{ filetype }}" alt="Strip image for the strip called {{ title }}"></a></p>
+
 
 <nav>
 {% set previousPost = collections.strip | getPreviousCollectionItem(page) %}
