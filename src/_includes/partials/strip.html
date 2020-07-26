@@ -1,11 +1,3 @@
 <h2><a href="/strips/{{ name }}">{{ title }}</a></h2>
 
 <p class="strip"><a href="/img/ph{{ name }}.{{ filetype  }}"><img src="/img/ph{{ name }}.{{ filetype }}" alt="Strip image for the strip called {{ title }}"></a></p>
-
-
-<nav>
-{% set previousPost = collections.strip | getPreviousCollectionItem(page) %}
-{% set nextPost = collections.strip | getNextCollectionItem(page) %}
-{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
-{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
-</nav>

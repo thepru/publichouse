@@ -1,0 +1,6 @@
+<nav>
+{% set previousPost = collections.strip | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.strip | getNextCollectionItem(page) %}
+{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+</nav>
