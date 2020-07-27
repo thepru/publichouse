@@ -22,6 +22,7 @@
     "clean-css": "^4.2.3"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.0.7"
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "modern-css-reset": "^1.1.1"
   }
 }
