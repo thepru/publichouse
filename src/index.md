@@ -4,9 +4,7 @@ bodyclass: "home"
 layout: layouts/home.html
 ---
 
-<h2>Here are the latest strips:</h2>
-
-<nav>
+<h2>Latest strips:</h2>
 
 {% set latestStrip = collections.strip | reverse %}
 <ul>
@@ -16,4 +14,3 @@ layout: layouts/home.html
 <li><a href="/strips/">Archive</a></li>
 </ul>
 
-</nav>
