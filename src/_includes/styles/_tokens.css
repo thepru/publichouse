@@ -1,0 +1,40 @@
+:root {
+
+/*----- Type -----*/
+
+--typeface-primary: /*"TBD",*/ -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+/* --typeface-primary-regular: 400; */
+/* --typeface-primary-bold: 700; */
+/* --type-face-secondary: "TBD" */
+--typeface-mono: Consolas,Lucida Console,Courier,Monaco,monospace;
+
+--type-size-mouse:     calc(var(--type-base)   * 0.625);  /* 10  px        */
+--type-size-small:     calc(var(--type-base)   * 0.75);   /* 12  px       */
+--type-size-base:                                1rem;    /* 16 px - Base */
+--type-size-large:     calc(var(--type-base)   * 2);      /* 32 px        */
+--type-size-display:   calc(var(--type-base)   * 2.5);    /* 40 px        */
+
+
+/*----- Spacing -----*/
+
+--space-none:                                    0;       /* 0            */
+--space-tiny:          calc(var(--space-base)  * 0.125);  /* 2  px        */
+--space-x-small:       calc(var(--space-base)  * 0.25);   /* 4  px        */
+--space-small:         calc(var(--space-base)  * 0.5);    /* 8  px        */
+--space-base:          var(--type-size-base)     1rem;    /* 16 px - Base */
+--space-large:         calc(var(--space-base)  * 2);      /* 32 px        */
+--space-x-large:       calc(var(--space-base)  * 3);      /* 48 px        */
+
+
+/*----- Semantic Assignments -----*/
+
+/* Type */
+--type-size-h1:        var(--type-size-base);
+--type-size-p:         var(--type-size-base);
+--type-size-h2:        var(--type-size-base);
+--type-size-h3:        var(--type-size-base);
+--type-size-h4:        var(--type-size-base);
+--type-size-h5:        var(--type-size-base);
+--type-size-h6:        var(--type-size-base);
+
+}
