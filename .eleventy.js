@@ -1,6 +1,7 @@
 // Setup Packages
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const CleanCSS = require("clean-css");
+const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
 
@@ -12,7 +13,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
-  
+
+  //Define Markdown-it lib; allow code indentation
+  let markdownLibrary = markdownIt({ // docs: https://www.npmjs.com/package/markdown-it
+    html: true,
+  }).disable('code')
+
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
   // Template Config
   return {
     markdownTemplateEngine: 'njk',
