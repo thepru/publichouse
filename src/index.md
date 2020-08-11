@@ -13,4 +13,3 @@ layout: layouts/home.html
         {% endfor  %}
     <li><a href="/strips/">Archive</a></li>
 </ul>
-
