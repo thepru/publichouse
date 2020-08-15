@@ -1,5 +1,22 @@
 /* A comment that should be removed by CleanCSS */
 
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.logo svg {
+    width: 25rem;
+    height: 7.9375rem;
+}
+
 h1 {
 	color: #333333;
   font-size: var(--type-size-h1);

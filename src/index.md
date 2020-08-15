@@ -4,7 +4,9 @@ bodyclass: "home"
 layout: layouts/home.html
 ---
 
-<h2>Latest strips:</h2>
+<a href="{% set latestStrip = collections.strip | reverse %}{% for strip in latestStrip.slice(0,1) %}{{ strip.url | url }}{% endfor  %}">
+    <img class="hero" src="http://placehold.it/1024x512/999999/333333&text=example+image" alt="Piggins and Newt enjoying some drinks">
+</a>
 
 {% set latestStrip = collections.strip | reverse %}
     <ul>
