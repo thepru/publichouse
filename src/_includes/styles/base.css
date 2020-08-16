@@ -9,6 +9,7 @@ body {
   background-color: white;
   max-width: 68rem;
   margin: auto;
+  margin-top: var(--space-small);
   padding: var(--space-large);
 }
 
