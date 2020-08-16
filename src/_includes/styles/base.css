@@ -1,5 +1,61 @@
 /* A comment that should be removed by CleanCSS */
 
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: white;
+  max-width: 68rem;
+  margin: auto;
+  padding: var(--space-large);
+}
+
+body > * + *, body article > * + * {
+  margin-top: var(--space-base);
+}
+
+.logo svg {
+    width: 25rem;
+    height: 7.9375rem;
+}
+
+h1, h2, h3, h4 {
+  color: #333333;
+}
+
+h1, h2 {
+  font-family: var(--typeface-secondary);
+  font-weight: var(--typeface-secondary-regular);
+  font-style: normal;
+}
+
+h3, h4 {
+  font-family: var(--typeface-primary);
+  font-weight: var(--typeface-primary-regular);
+  font-style: normal;
+}
+
+h2 { font-size: var(--type-size-display); }
+h3 { font-size: var(--type-size-x-large); }
+h4 { font-size: var(--type-size-large); }
+
+h1 + * {
+  margin-top: var(--space-large);
+  /* outline: red solid thin; */
+}
+
+p, li {
+  font-size: var(--type-size-base);
+  font-family: var(--typeface-primary);
+  font-weight: var(--typeface-primary-book);
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -12,44 +68,21 @@
   white-space: nowrap;
 }
 
-.logo svg {
-    width: 25rem;
-    height: 7.9375rem;
+hr {
+  margin-top: var(--space-large) !important;
 }
 
-h1 {
-	color: #333333;
-  font-size: var(--type-size-h1);
-  font-family: var(--typeface-secondary);
-  font-weight: var(--typeface-secondary-regular);
-  font-style: normal;
+nav > * + * {
+  margin-left: var(--space-large);
 }
 
-p, li {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  font-family: var(--typeface-primary);
-  font-weight: var(--typeface-primary-book);
-  font-style: normal;
+nav {
+  margin-top: var(--space-large);
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
 }
 
-
-body {
-  background-color: lightsteelblue;
-  max-width: 64rem;
-  margin: auto;
-  padding: var(--space-large);
-}
-
-
-body *+* {
-  /* outline: red solid thin; */
-}
-
-img {
-  max-width: 100%;
-}
- 
 /* Grid Section Definitions */
 
 /* body article h2      { grid-area : t; }
@@ -95,12 +128,3 @@ body article         { grid-area : a;  } */
       ;
   }
 } */
-
-.sr-only {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-}

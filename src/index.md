@@ -8,6 +8,8 @@ layout: layouts/home.html
     <img class="hero" src="http://placehold.it/1024x512/999999/333333&text=example+image" alt="Piggins and Newt enjoying some drinks">
 </a>
 
+## Latest Strips
+
 {% set latestStrip = collections.strip | reverse %}
     <ul>
         {% for strip in latestStrip.slice(0,2) %}

@@ -11,9 +11,10 @@
 
 --type-size-mouse:     calc(var(--type-size-base)   * 0.625);  /* 10  px        */
 --type-size-small:     calc(var(--type-size-base)   * 0.75);   /* 12  px       */
---type-size-base:      1rem;                                   /* 16 px - Base */
---type-size-large:     calc(var(--type-size-base)   * 2);      /* 32 px        */
---type-size-display:   calc(var(--type-size-base)   * 3);      /* 48 px        */
+--type-size-base:      1.25rem;                                /* 20 px - Base */
+--type-size-large:     calc(var(--type-size-base)   * 1.5);    /* 30 px        */
+--type-size-x-large:   calc(var(--type-size-base)   * 1.75);   /* 35 px        */
+--type-size-display:   calc(var(--type-size-base)   * 3);      /* 60 px        */
 
 
 /*----- Spacing -----*/
@@ -22,21 +23,8 @@
 --space-tiny:          calc(var(--space-base)  * 0.125);  /* 2  px        */
 --space-x-small:       calc(var(--space-base)  * 0.25);   /* 4  px        */
 --space-small:         calc(var(--space-base)  * 0.5);    /* 8  px        */
---space-base:          var(--type-size-base);             /* 16 px - Base */
+--space-base:          1rem;                              /* 16 px - Base */
 --space-large:         calc(var(--space-base)  * 2);      /* 32 px        */
 --space-x-large:       calc(var(--space-base)  * 3);      /* 48 px        */
-
-
-/*----- Semantic Assignments -----*/
-
-/* Type */
-
---type-size-p:         var(--type-size-base);
---type-size-h1:        var(--type-size-display);
---type-size-h2:        var(--type-size-x-large);
---type-size-h3:        var(--type-size-large);
---type-size-h4:        var(--type-size-base);
---type-size-h5:        var(--type-size-base);
---type-size-h3:        var(--type-size-base);
 
 }
