@@ -1,14 +1,14 @@
 ---
-title: "Public House Strips"
+title: "Archive of Selected Strips"
 bodyclass: "archive"
 layout: layouts/home.html
 permalink: "/strips/"
 ---
 
-<h2>Archive:</h2>
+## {{ title }}&hellip;
 
 <ul>
     {% for strip in collections.strip | reverse %}
-        <li><a href="{{ strip.url | url }}">{{ strip.data.title }}</a>&ensp;&middot;&ensp;{{ strip.date.toDateString() }}</li>
+        <li><a href="{{ strip.url | url }}" title="Originally published on: {{ strip.date.toDateString() }}">{{ strip.data.title }}</a></li>
     {% endfor %}
 </ul>
