@@ -15,14 +15,17 @@ body {
 
 body > * + *, body article > * + * {
   margin-top: var(--space-base);
+  /* outline: red solid thin !important; */
 }
 
-.logo svg {
-  /* width: 25rem; */
-  /* height: 7.9375rem; */
-  display: block;
-  max-width: 25rem;
-  width: 75%;
+body.strip .logo svg  {
+  width: 12.5rem;
+  height: 3.96875rem;
+}
+
+.logo svg {;
+  width: 25rem;
+  height: 7.9375rem;
 }
 
 h1, h2, h3, h4 {
@@ -78,7 +81,7 @@ hr {
 }
 
 nav > * + * {
-  margin-left: var(--space-large);
+  margin-left: var(--space-x-large);
 }
 
 nav {

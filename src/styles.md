@@ -1,6 +1,6 @@
 ---
 title: "Style Guide"
-bodyclass: "styles"
+bodyClass: "styles"
 layout: layouts/home.html
 ---
 

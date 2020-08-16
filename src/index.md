@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Public House"
-bodyclass: "home"
+bodyClass: "home"
 layout: layouts/home.html
 ---
 
