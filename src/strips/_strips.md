@@ -2,7 +2,8 @@
 title: "Archive of Selected Strips"
 bodyclass: "archive"
 layout: layouts/home.html
-permalink: "/strips/"
+permalink: /strips/
+eleventyExcludeFromCollections: true
 ---
 
 ## {{ title }}&hellip;
