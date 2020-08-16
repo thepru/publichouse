@@ -1,0 +1,34 @@
+/* Link & Focus Styles. */
+
+/* Order tips via Eric Meyer: https://twitter.com/meyerweb/status/1279053893440282625 */
+
+a, a img {
+    outline: transparent dotted thick;
+    color: #666;
+}
+
+a:visited, a:visited img {
+    outline: transparent dotted thick;
+-   color: #666;
+}
+
+/* a img {
+    outline: red solid thin;
+} */
+
+a:hover, a:hover img {
+    color: #222;
+}
+
+a:focus, a:focus img {
+    outline-offset: .5rem;
+    outline: #222 solid thin;
+    transition: all 0.33s ease;
+    color: #222;
+}
+
+a:active, a:active img {
+    color: #222;
+    outline-offset: .5rem;
+    outline: #666 solid thin;
+}
