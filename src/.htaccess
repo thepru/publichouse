@@ -1,7 +1,3 @@
----
-permalink: .htaccess
----
-
 IndexIgnore *
 ErrorDocument 404 {{ site.site_url }}/error/
 ErrorDocument 500 {{ site.site_url }}/error/
