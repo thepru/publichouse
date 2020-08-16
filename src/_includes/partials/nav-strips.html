@@ -1,7 +1,11 @@
 <hr>
 <nav>
+
     {% set previousPost = collections.strip | getPreviousCollectionItem(page) %}
     {% set nextPost = collections.strip | getNextCollectionItem(page) %}
-    <p>{% if previousPost %}<a href="{{ previousPost.url }}" title="{{ previousPost.data.title }}">Previous</a>{% endif %}</p>
-    <p>{% if nextPost %}<a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}">Next</a>{% endif %}</p>
+
+    {% if previousPost %}<a href="{{ previousPost.url }}" title="{{ previousPost.data.title }}">Previous</a>{% endif %}
+    
+    {% if nextPost %}<a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}">Next</a>{% endif %}
+
 </nav>

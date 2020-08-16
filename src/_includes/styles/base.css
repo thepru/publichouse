@@ -105,7 +105,7 @@ nav {
   margin-top: var(--space-large);
   display: flex;
   justify-content: space-between;
-  justify-content: center;
+  /* outline: red solid thin; */
   font-style: normal;
 }
 
