@@ -1,6 +1,7 @@
 /* A comment that should be removed by CleanCSS */
 
 html {
+  background-color: #ccc;
   font-size: 100%;
 }
 
