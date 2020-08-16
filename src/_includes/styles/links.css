@@ -39,7 +39,7 @@ a:active, a:active img {
     
     a:visited, a:visited img {
         outline: transparent dotted thick;
-        color: var(--color-light);
+        color: var(--color-tone-light);
     }
         
     a:hover, a:hover img {
