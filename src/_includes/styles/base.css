@@ -94,11 +94,19 @@ nav > * + * {
   margin-left: var(--space-x-large);
 }
 
+nav p {
+  font-family: var(--typeface-secondary);
+  font-weight: var(--typeface-secondary-regular);
+  font-size: var(--type-size-large)
+}
+
+
 nav {
   margin-top: var(--space-large);
   display: flex;
   justify-content: space-between;
   justify-content: center;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {
