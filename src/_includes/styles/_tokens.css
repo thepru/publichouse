@@ -27,4 +27,12 @@
 --space-large:         calc(var(--space-base)  * 2);      /* 32 px        */
 --space-x-large:       calc(var(--space-base)  * 3);      /* 48 px        */
 
+/*----- Color -----*/
+
+--color-dark: hsla(0, 0%, 13%, 1);
+--color-light: hsla(0, 0%, 100%, 1);
+--color-tone-light: hsla(0, 0%, 80%, 1);
+--color-tone-dark: hsla(0, 0%, 50%, 1);
+
 }
+

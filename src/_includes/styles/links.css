@@ -4,31 +4,55 @@
 
 a, a img {
     outline: transparent dotted thick;
-    color: #666;
+    color: var(--color-tone-dark);
 }
 
 a:visited, a:visited img {
     outline: transparent dotted thick;
--   color: #666;
+    color: var(--color-tone-dark);
 }
 
-/* a img {
-    outline: red solid thin;
-} */
-
 a:hover, a:hover img {
-    color: #222;
+    color: var(--color-dark);
+    transition: all 0.33s ease;
+
 }
 
 a:focus, a:focus img {
     outline-offset: .5rem;
-    outline: #222 solid thin;
-    transition: all 0.33s ease;
-    color: #222;
+    outline: var(--color-tone-dark) solid thin;
+    transition: all 0.25s ease;
+    color: var(--color-dark);
 }
 
 a:active, a:active img {
-    color: #222;
+    color: var(--color-dark);
     outline-offset: .5rem;
-    outline: #666 solid thin;
+    outline: var(--color-dark) solid thin;
+}
+
+@media (prefers-color-scheme: dark) {
+    a, a img {
+        outline: transparent dotted thick;
+        color: var(--color-tone-light);
+    }
+    
+    a:visited, a:visited img {
+        outline: transparent dotted thick;
+        color: var(--color-light);
+    }
+        
+    a:hover, a:hover img {
+        color: var(--color-tone-dark);
+    }
+    
+    a:focus, a:focus img {
+        outline: var(--color-light) solid thin;
+        color: var(--color-tone-dark);
+    }
+    
+    a:active, a:active img {
+        color: var(--color-tone-light);
+        outline: var(--color-dark) solid thin;
+    }
 }

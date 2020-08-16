@@ -1,12 +1,12 @@
 /* A comment that should be removed by CleanCSS */
 
 html {
-  background-color: #ccc;
+  background-color: var(--color-light);
   font-size: 100%;
 }
 
 body {
-  background-color: white;
+  background-color: var(--color-light);
   max-width: 68rem;
   margin: auto;
   margin-top: var(--space-small);
@@ -29,7 +29,7 @@ body.strip .logo svg  {
 }
 
 h1, h2, h3, h4 {
-  color: #333333;
+  color: var(--color-dark);
 }
 
 h1, h2 {
@@ -58,6 +58,7 @@ p, li {
   font-family: var(--typeface-primary);
   font-weight: var(--typeface-primary-book);
   font-style: normal;
+  color: var(--color-dark);
 }
 
 img {
@@ -89,6 +90,26 @@ nav {
   display: flex;
   justify-content: space-between;
   justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--color-dark);
+  }
+  
+  body {
+    background-color: var(--color-dark);
+
+  }
+
+  p, li {
+    color: var(--color-light);
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--color-light);
+  }
+  
 }
 
 /* Grid Section Definitions */
