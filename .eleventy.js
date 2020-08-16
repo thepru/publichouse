@@ -8,6 +8,10 @@ module.exports = function(eleventyConfig) {
   //Passthrough Copy Files
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPassthroughCopy('./src/img/');
+  eleventyConfig.addPassthroughCopy('./src/.htaccess');
+  eleventyConfig.addPassthroughCopy('./src/humans.txt');
+  eleventyConfig.addPassthroughCopy('./src/robots.txt');
+  eleventyConfig.addPassthroughCopy('./src/keybase.txt');
 
   // Add CleanCSS and Minify
   eleventyConfig.addFilter("cssmin", function(code) {
