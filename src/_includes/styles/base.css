@@ -16,8 +16,11 @@ body > * + *, body article > * + * {
 }
 
 .logo svg {
-    width: 25rem;
-    height: 7.9375rem;
+  /* width: 25rem; */
+  /* height: 7.9375rem; */
+  display: block;
+  max-width: 25rem;
+  width: 75%;
 }
 
 h1, h2, h3, h4 {
