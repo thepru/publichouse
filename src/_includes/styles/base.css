@@ -34,6 +34,10 @@ body > * + *, body article > * + * {
   /* height: 7.9375rem; */
 }
 
+body.archive .archiveLink {
+  display: none;
+}
+
 h1, h2, h3, h4 {
   color: var(--color-dark);
 }

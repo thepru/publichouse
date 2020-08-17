@@ -1,6 +1,6 @@
 ---
 title: "Archive of Selected Strips"
-bodyclass: "archive"
+bodyClass: "archive"
 layout: layouts/home.html
 permalink: /strips/
 eleventyExcludeFromCollections: true
