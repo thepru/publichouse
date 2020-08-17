@@ -11,6 +11,7 @@ body {
   margin: auto;
   margin-top: var(--space-small);
   padding: var(--space-base);
+  padding-bottom: var(--space-x-large);
 }
 
 @media (min-width: 32rem) {
@@ -24,11 +25,6 @@ body > * + *, body article > * + * {
   margin-top: var(--space-base);
   /* outline: red solid thin */
 }
-
-/* body.strip .logo svg  {
-  width: 12.5rem;
-  height: 3.96875rem;
-} */
 
 .logo svg {;
   max-width: 100%;
@@ -129,48 +125,62 @@ nav {
   
 }
 
-/* Grid Section Definitions */
 
-/* body article h2      { grid-area : t; }
-body article         { grid-area : a;  } */
+/* Link & Focus Styles. */
 
+/* Order tips via Eric Meyer: https://twitter.com/meyerweb/status/1279053893440282625 */
 
-/* Mobile First */
+a, a img {
+  outline: transparent dotted thick;
+  color: var(--color-tone-dark);
+}
 
-/* body article {
-    display: grid;
-    grid-gap: 1rem;
-    row-gap: 0;
-    grid-row-gap: 0;
-    grid-template-areas:
-    "t"
-    "s"
-    "n"
-    ;
-  } */
-  
-/* Medium */
-  
-/* @media (min-width: 40rem) {
-  body article {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "t t t t"
-      "s s s s"
-      "n n n n"
-      ;
+a:visited, a:visited img {
+  outline: transparent dotted thick;
+  color: var(--color-tone-dark);
+}
+
+a:hover, a:hover img {
+  color: var(--color-dark);
+  transition: all 0.33s ease;
+
+}
+
+a:focus, a:focus img {
+  outline-offset: .5rem;
+  outline: var(--color-tone-dark) solid thin;
+  transition: all 0.25s ease;
+  color: var(--color-dark);
+}
+
+a:active, a:active img {
+  color: var(--color-dark);
+  outline-offset: .5rem;
+  outline: var(--color-dark) solid thin;
+}
+
+@media (prefers-color-scheme: dark) {
+  a, a img {
+      outline: transparent dotted thick;
+      color: var(--color-tone-light);
   }
-} */
-
-/* Large */
-
-/* @media (min-width: 64rem) {
-  body article {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "t t t t t t t t"
-      "s s s s s s s s"
-      "n n n n n n n n"
-      ;
+  
+  a:visited, a:visited img {
+      outline: transparent dotted thick;
+      color: var(--color-tone-light);
   }
-} */
+      
+  a:hover, a:hover img {
+      color: var(--color-tone-dark);
+  }
+  
+  a:focus, a:focus img {
+      outline: var(--color-light) solid thin;
+      color: var(--color-tone-dark);
+  }
+  
+  a:active, a:active img {
+      color: var(--color-tone-light);
+      outline: var(--color-dark) solid thin;
+  }
+}
