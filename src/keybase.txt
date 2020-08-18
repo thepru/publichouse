@@ -4,7 +4,7 @@ https://keybase.io/thepru
 
 I hereby claim:
 
-  * I am an admin of http://thepublichouse.net
+  * I am an admin of https://thepublichouse.net
   * I am thepru (https://keybase.io/thepru) on keybase.
   * I have a public key ASD1wOjmLK5PUYmB8bZ7cy0bsvpq9MQ8Nrbm-BYd8SgySwo
 
