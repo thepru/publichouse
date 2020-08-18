@@ -1,0 +1,195 @@
+/* A comment that should be removed by CleanCSS */
+
+html {
+  background-color: var(--color-light);
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--color-light);
+  max-width: 68rem;
+  margin: auto;
+  margin-top: var(--space-small);
+  padding: var(--space-base);
+  padding-bottom: var(--space-x-large);
+}
+
+@media (min-width: 32rem) {
+  body {
+    margin-top: var(--space-base);
+    padding: var(--space-large);
+  }
+}
+
+body > * + *, body article > * + * {
+  margin-top: var(--space-base);
+  /* outline: red solid thin */
+}
+
+.logo svg {;
+  max-width: 100%;
+  width: 12.5rem;
+  height: 3.96875rem;
+  /* width: 25rem; */
+  /* height: 7.9375rem; */
+}
+
+body.archive .archiveLink {
+  display: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-dark);
+}
+
+h1, h2 {
+  font-family: var(--typeface-secondary);
+  font-weight: var(--typeface-secondary-regular);
+  font-style: normal;
+}
+
+h3, h4 {
+  font-family: var(--typeface-primary);
+  font-weight: var(--typeface-primary-regular);
+  font-style: normal;
+}
+
+h2 { font-size: var(--type-size-x-large); }
+h3 { font-size: var(--type-size-x-large); }
+h4 { font-size: var(--type-size-large); }
+
+h1 + * {
+  /* margin-top: var(--space-large); */
+}
+
+p, li {
+  font-size: var(--type-size-base);
+  font-family: var(--typeface-primary);
+  font-weight: var(--typeface-primary-book);
+  font-style: normal;
+  color: var(--color-dark);
+}
+
+img {
+  max-width: 100%;
+}
+
+p.strip {
+  display: grid;
+  place-items: center;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+hr {
+  margin-top: var(--space-large) !important;
+}
+
+nav > * + * {
+  margin-left: var(--space-x-large);
+}
+
+nav p {
+  font-family: var(--typeface-secondary);
+  font-weight: var(--typeface-secondary-regular);
+  font-size: var(--type-size-large)
+}
+
+
+nav {
+  margin-top: var(--space-large);
+  display: flex;
+  justify-content: space-between;
+  /* outline: red solid thin; */
+  font-style: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--color-dark);
+  }
+  
+  body {
+    background-color: var(--color-dark);
+
+  }
+
+  p, li {
+    color: var(--color-light);
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--color-light);
+  }
+  
+}
+
+
+/* Link & Focus Styles. */
+
+/* Order tips via Eric Meyer: https://twitter.com/meyerweb/status/1279053893440282625 */
+
+a, a img {
+  outline: transparent dotted thick;
+  color: var(--color-tone-dark);
+}
+
+a:visited, a:visited img {
+  outline: transparent dotted thick;
+  color: var(--color-tone-dark);
+}
+
+a:hover, a:hover img {
+  color: var(--color-dark);
+  transition: all 0.33s ease;
+
+}
+
+a:focus, a:focus img {
+  outline-offset: .5rem;
+  outline: var(--color-tone-dark) solid thin;
+  transition: all 0.25s ease;
+  color: var(--color-dark);
+}
+
+a:active, a:active img {
+  color: var(--color-dark);
+  outline-offset: .5rem;
+  outline: var(--color-dark) solid thin;
+}
+
+@media (prefers-color-scheme: dark) {
+  a, a img {
+      outline: transparent dotted thick;
+      color: var(--color-tone-light);
+  }
+  
+  a:visited, a:visited img {
+      outline: transparent dotted thick;
+      color: var(--color-tone-light);
+  }
+      
+  a:hover, a:hover img {
+      color: var(--color-tone-dark);
+  }
+  
+  a:focus, a:focus img {
+      outline: var(--color-light) solid thin;
+      color: var(--color-tone-dark);
+  }
+  
+  a:active, a:active img {
+      color: var(--color-tone-light);
+      outline: var(--color-dark) solid thin;
+  }
+}

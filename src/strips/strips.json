@@ -1,0 +1,6 @@
+{
+    "permalink": "/strips/{{ name }}/",
+    "layout": "layouts/home.html",
+    "bodyClass": "strip",
+    "tags": "strip"
+}

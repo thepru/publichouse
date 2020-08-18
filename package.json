@@ -1,0 +1,32 @@
+{
+  "name": "publichouse",
+  "version": "1.0.0",
+  "description": "Public House: A comic by [the pru][thepru] ===========",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx eleventy --serve --quiet",
+    "clean": "rm -rf _site/*",
+    "deploy": "npm run clean && npx eleventy && ./deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepru/publichouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepru/publichouse/issues"
+  },
+  "homepage": "https://github.com/thepru/publichouse#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "clean-css": "^4.2.3",
+    "markdown-it": "^11.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "modern-css-reset": "^1.1.1"
+  }
+}
