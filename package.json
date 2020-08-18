@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx eleventy --serve --quiet",
-    "foo": "./_deployConfig.txt && echo \"$remotePath\"",
-    "deploy": "npx eleventy && source ./_deployConfig.txt && rsync -avz -e ssh _site/ --delete $remotePath"
+    "clean": "rm -rf _site/*",
+    "deploy": "npm run clean && npx eleventy && ./deploy.sh"
   },
   "repository": {
     "type": "git",
