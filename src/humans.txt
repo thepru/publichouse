@@ -1,0 +1,17 @@
+/* TEAM */
+Creator/Writer/Illustrator and Designer/Developer : Rodney Pruitt
+Twitter: @thepru
+Github: https://github.com/thepru
+
+/* SITE */
+Language: English
+Doctype: HTML5
+IDE: VSCode and Vim
+Tech: Eleventy (11ty.dev)
+Assets: Figma
+Source at Github: https://github.com/thepru/publichouse
+
+/* Art */
+ - Art often drawn on Strathmore bristol board with FW India Ink using an assortment of dip pens and sometimes Winsor Newton Natural Paint Brushes. Lot of timeshowever, simple and crude tools are used like Bic ink pens, pencils and whatever paper I grab.
+ - Linea app by IconFactory is the perfect minimalist drawing app. It helps be get ideas going without wating loads of paper or other materials.
+ - Writing is done by hand on scrap-paper, IA Writer, and Vim.
