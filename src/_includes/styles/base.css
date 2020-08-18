@@ -74,6 +74,11 @@ img {
   max-width: 100%;
 }
 
+p.strip {
+  display: grid;
+  place-items: center;
+}
+
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
