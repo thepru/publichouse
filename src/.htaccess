@@ -1,5 +1,5 @@
 IndexIgnore *
-ErrorDocument 404 {{ site.site_url }}/error/
-ErrorDocument 500 {{ site.site_url }}/error/
-ErrorDocument 403 {{ site.site_url }}/error/
-ErrorDocument 401 {{ site.site_url }}/error/
+ErrorDocument 404 https://thepublichouse.net/error/
+ErrorDocument 500 https://thepublichouse.net/error/
+ErrorDocument 403 https://thepublichouse.net/error/
+ErrorDocument 401 https://thepublichouse.net/error/
