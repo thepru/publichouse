@@ -6,7 +6,7 @@ Github: https://github.com/thepru
 /* SITE */
 Language: English
 Doctype: HTML5
-IDE: VSCode and Vim
+Editors: VSCode and Vim
 Tech: Eleventy (11ty.dev)
 Assets: Figma
 Source at Github: https://github.com/thepru/publichouse
