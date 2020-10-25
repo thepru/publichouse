@@ -121,8 +121,12 @@ nav {
   
   body {
     background-color: var(--color-dark);
-
   }
+ 
+  img.hero {
+    background-color: #333;
+  } 
+
 
   p, li {
     color: var(--color-light);
