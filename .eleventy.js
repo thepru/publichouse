@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
   // Define Markdown-it lib; allow code indentation by not parsing indention as code elements
   let markdownLibrary = markdownIt({ // docs: https://www.npmjs.com/package/markdown-it
     html: true,
+    typographer: true,
   }).disable('code')
 
   eleventyConfig.setLibrary("md", markdownLibrary);
