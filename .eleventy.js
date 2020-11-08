@@ -2,6 +2,7 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const CleanCSS = require("clean-css");
 const markdownIt = require("markdown-it");
+const markdownItContainer = require("markdown-it-container");
 
 module.exports = function(eleventyConfig) {
 
@@ -23,6 +24,19 @@ module.exports = function(eleventyConfig) {
     html: true,
     typographer: true,
   }).disable('code')
+  
+  // Markdown-it container plugin
+  .use( require('markdown-it-container'), '', { // Can add wrapping containers with IDs and Classes, and nest them - docs: https://github.com/markdown-it/markdown-it-container - and some help via: https://ryan.thaut.me/blog/2020/04/25/flirting-with-eleventy-11ty/
+    validate: () => true,
+    render: (tokens, idx) => {
+        if (tokens[idx].nesting === 1) {
+            const classList = tokens[idx].info.trim()
+            return `<div ${classList && `class="${classList}"`}>`;
+        } else {
+            return `</div>`;
+        }
+    }
+  });
 
   eleventyConfig.setLibrary("md", markdownLibrary);
 
