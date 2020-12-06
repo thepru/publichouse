@@ -1,39 +1,41 @@
 ---json
 {
-  "permalink": "feed.xml",
+  "permalink": "feed.json",
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "Public House",
     "subtitle": "Public House by the pru",
-    "url": "https://thepublichouse.net/",
-    "feedUrl": "https://thepublichouse.net/feed.xml",
+    "url": "https://www.thepublichouse.net/",
+    "feedUrl": "https://www.thepublichouse.net/feed.xml",
     "author": {
       "name": "the pru",
-      "email": "thepru@hey.com"
+      "url": "https://twitter.com/thepru"
     }
   }
 }
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.strip | rssLastUpdatedDate }}</updated>
-  <id>{{ metadata.url }}</id>
-  <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
-  </author>
-  {%- for strip in collections.strip %}
-  {% set absoluteStripUrl %}{{ strip.url | url | absoluteUrl(metadata.url) }}{% endset %}
-  <entry>
-    <title>{{ strip.data.title }}</title>
-    <link href="{{ absoluteStripUrl }}"/>
-    <updated>{{ strip.date | rssDate }}</updated>
-    <id>{{ absoluteStripUrl }}</id>
-    <content type="html">{{ strip.templateContent | htmlToAbsoluteUrls(absoluteStripUrl) }}</content>
-  </entry>
-  {%- endfor %}
-</feed>
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ metadata.title }}",
+  "home_page_url": "{{ metadata.url }}",
+  "feed_url": "{{ metadata.feedUrl }}",
+  "description": "{{ metadata.subtitle }}",
+  "author": {
+    "name": "{{ metadata.author.name }}",
+    "url": "{{ metadata.author.url }}"
+  },
+  "items": [
+    {%- for strip in collections.strip | reverse %}
+    {%- set absoluteStripUrl %}{{ strip.url | url | absoluteUrl(metadata.url) }}{% endset -%}
+    {
+      "id": "{{ absoluteStripUrl }}",
+      "url": "{{ absoluteStripUrl }}",
+      "title": "{{ strip.data.title }}",
+      "content_html": {% if strip.templateContent %}{{ strip.templateContent | dump | safe }}{% else %}""{% endif %},
+      "date_published": "{{ strip.date | rssDate }}"
+    }
+    {% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+

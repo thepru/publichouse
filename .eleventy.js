@@ -38,6 +38,7 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Template Config
