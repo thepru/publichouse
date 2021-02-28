@@ -1,4 +1,4 @@
-## Public House: A comic by [thepru](https://twitter.com/thepru)
+# Public House: A comic by [thepru](https://twitter.com/thepru)
 
 ***
 
