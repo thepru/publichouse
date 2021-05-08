@@ -1,0 +1,9 @@
+ErrorDocument 404 https://thepublichouse.net/error/
+ErrorDocument 500 https://thepublichouse.net/error/
+ErrorDocument 403 https://thepublichouse.net/error/
+ErrorDocument 401 https://thepublichouse.net/error/
+
+<IfModule mod_headers.c>
+  Header always set Permissions-Policy: interest-cohort=()
+</IfModule> 
+Options -Indexes
