@@ -8,7 +8,6 @@ Language: English
 Doctype: HTML5
 Editors: VSCode and Vim
 Tech: Eleventy (11ty.dev)
-Assets: Figma
 Source at Github: https://github.com/thepru/publichouse
 
 /* Art */
