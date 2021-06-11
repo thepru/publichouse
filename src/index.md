@@ -11,9 +11,9 @@ layout: layouts/home.html
 ## Latest Strips
 
 {% set latestStrip = collections.strip | reverse %}
-    <ul>
-        {% for strip in latestStrip.slice(0,2) %}
-            <li><a href=" {{ strip.url | url }}  ">{{ strip.data.title }}</a> - {{ strip.date.toDateString() }}</li>
-        {% endfor  %}
-    <li><a href="/strips/" title="view all strips">More&hellip;</a></li>
+<ul>
+{% for strip in latestStrip.slice(0,2) %}
+<li><a href=" {{ strip.url | url }}  ">{{ strip.data.title }}</a> - {{ strip.date.toDateString() }}</li>
+{% endfor  %}
+<li><a href="/strips/" title="view all strips">More&hellip;</a></li>
 </ul>
