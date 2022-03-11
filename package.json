@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/thepru/publichouse#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "clean-css": "^4.2.3",
+    "@11ty/eleventy": "^1.0.0",
+    "clean-css": "^4.2.4",
     "markdown-it": "^11.0.1",
     "markdown-it-container": "^3.0.0"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
     "modern-css-reset": "^1.4.0"
   }
 }
