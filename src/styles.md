@@ -20,7 +20,7 @@ In tortor neque, congue ut elementum vel, egestas eu arcu. Integer vel sapien se
 
 ### Heading Level 3
 
-<a href="/"><img src="http://placehold.it/1024x512/999999/333333&text=example+image" alt="Image Test"></a>
+<a href="/"><img src="https://via.placeholder.com/1024x512/999999/333333&text=example+image" alt="Image Test"></a>
 
 
 ####  Heading Level 4
