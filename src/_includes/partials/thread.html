@@ -1,0 +1,12 @@
+{% if target %}
+<p>This threads starts with <a href="../{{ target }}/">{{ target }}</a></p>
+{% endif %}
+
+{% if thread %}
+<p>Thread from <a href="{{ page.url }}">this strip</a>:</p>
+<ol>
+  {% for thread in thread %}
+  <li><a href="../{{ thread | url }}">{{ thread }}</a></li>
+  {% endfor %}
+</ol>
+{% endif %}
