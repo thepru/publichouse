@@ -10,6 +10,6 @@ eleventyExcludeFromCollections: true
 
 <ul>
   {% for strip in collections.strip | reverse %}
-  <li><a href="{{ strip.url | url }}" title="Originally published on: {{ strip.date.toDateString() }}">{{ strip.data.title }}</a></li>
+  <li><a href="{{ strip.url | url }}" title="Originally published on: {{ strip.date.toDateString() }}">{{ strip.data.title }}</a> {% if strip.data.thread %}<em>(starts a thread)</em>{% endif %}</li>
   {% endfor %}
 </ul>
