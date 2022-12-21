@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /error/
 
 Allow: /
-https://thepublichouse.net/sitemap.xml
+Sitemap: https://thepublichouse.net/sitemap.xml
