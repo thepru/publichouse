@@ -5,15 +5,14 @@ filetype: png
 ---
 
 {% include "partials/strip.html" %}
-<div markdown="1" class="sr-only">
+
+::: sr-only
 
 ## {{ title }}
 
 ### Panel One
 **Piggins:** ...
 
-### Panel Two
-**Newt:** ...
+::: sr-only
 
-</div>
 {% include "partials/nav-strips.html" %}
