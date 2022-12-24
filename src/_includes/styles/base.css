@@ -79,19 +79,7 @@ p.strip {
   place-items: center;
 }
 
-.sr-only {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-}
-
-.footnotes-sep, .footnotes {
+.sr-only, .footnotes-sep, .footnotes {
   border: 0;
   clip: rect(0 0 0 0);
   height: auto;
