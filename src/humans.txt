@@ -1,6 +1,5 @@
 /* TEAM */
 Creator/Writer/Illustrator and Designer/Developer : Rodney Pruitt
-Twitter: @thepru
 Github: https://github.com/thepru
 
 /* SITE */
