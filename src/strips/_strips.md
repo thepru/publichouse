@@ -6,7 +6,12 @@ permalink: /strips/
 eleventyExcludeFromCollections: true
 ---
 
+<img class="hero" src="/img/piggins.png?version={{ site.time }}" alt="Piggins sleeping lakeside">
+<br/>
+
 ## {{ title }}&hellip;
+
+
 
 <ul>
   {% for strip in collections.strip | reverse %}

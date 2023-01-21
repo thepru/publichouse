@@ -5,7 +5,7 @@ layout: layouts/home.html
 ---
 
 <a href="{% set latestStrip = collections.strip | reverse %}{% for strip in latestStrip.slice(0,1) %}{{ strip.url | url }}{% endfor  %}">
-  <img class="hero" src="/img/hero.png?version={{ site.time }}" alt="Piggins sleeping lakeside">
+  <img class="hero" src="/img/hero.png?version={{ site.time }}" alt="Piggins and Newt at the bar. Newt says: Tough day? Piggins: Join the Club">
 </a>
 
 ## Latest Strips
