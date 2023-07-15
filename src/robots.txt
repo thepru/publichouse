@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /error/
-
-Allow: /
-Sitemap: https://thepublichouse.net/sitemap.xml
+Disallow: /
