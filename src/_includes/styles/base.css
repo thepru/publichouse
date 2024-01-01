@@ -62,7 +62,7 @@ h1 + * {
   /* margin-top: var(--space-large); */
 }
 
-p, li {
+p, li, details {
   font-size: var(--type-size-base);
   font-family: var(--typeface-primary);
   font-weight: var(--typeface-primary-book);
@@ -79,7 +79,7 @@ p.strip {
   place-items: center;
 }
 
-.sr-only, .footnotes-sep, .footnotes {
+.sr-only {
   border: 0;
   clip: rect(0 0 0 0);
   height: auto;
@@ -128,7 +128,7 @@ nav {
   }  */
 
 
-  p, li {
+  p, li, details {
     color: var(--color-light);
   }
 

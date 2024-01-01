@@ -45,6 +45,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
+  // Move footnotes via: Moving the Footnotes on Eleventy - Scott Watermasysk - https://scottw.com/articles/moving_the_footnotes_on_eleventy/ → https://web.archive.org/web/20230603165523/https://scottw.com/articles/moving_the_footnotes_on_eleventy/
+  eleventyConfig.addTransform("move-footnotes", (content, outputPath) => {
+    if (outputPath && outputPath.endsWith(".html")) {
+      const footnoteRegex = /(<hr class="footnotes-sep">\n<section class="footnotes">[\s\S]+<\/section>)/m;
+      const newFootnoteLocationRegex = /<!--FOOTNOTES-->/;
+      let newLocation = content.match(newFootnoteLocationRegex);
+      let footnote = content.match(footnoteRegex);
+      if (newLocation && footnote) {
+        return content
+          .replace(footnoteRegex, "")
+          .replace(newFootnoteLocationRegex, footnote[0]);
+      }
+    }
+  
+    return content;
+  });
+
   // Template Config
   return {
     markdownTemplateEngine: 'njk',
