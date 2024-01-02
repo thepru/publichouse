@@ -70,6 +70,24 @@ p, li, details {
   color: var(--color-dark);
 }
 
+details > * + * {
+  margin-top: var(--space-small);
+}
+
+details > * + h3 {
+  margin-top: var(--space-large);
+}
+
+details h3 {
+  font-size: var(--type-size-large);
+}
+
+details hr {
+  border: 0;
+  border-bottom: 1px dashed;
+  background: transparent;
+}
+
 img {
   max-width: 100%;
 }
