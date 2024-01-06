@@ -70,6 +70,11 @@ p, li, details {
   color: var(--color-dark);
 }
 
+details h3 {
+  font-size: var(--type-size-base) !important;
+  font-weight: bold;
+}
+
 details p {
   text-align: left;
 }
@@ -83,6 +88,7 @@ details h2,
 details h3 {
   display: block;
   text-align: center;
+  line-height: 1.1;
 }
 
 details > * + * {
