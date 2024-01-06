@@ -97,7 +97,7 @@ article > * + details {
     }
     
     details * {
-      font-size: var(--type-size-small);
+      font-size: var(--type-size-standard);
       font-family: AmericanTypewriter, Courier, monospace;
     }
 

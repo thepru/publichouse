@@ -11,6 +11,7 @@
 
 --type-size-mouse:     calc(var(--type-size-base)   * 0.625);  /* 10  px       */
 --type-size-small:     calc(var(--type-size-base)   * 0.75);   /* 12  px       */
+--type-size-standard:  calc(var(--type-size-base)   * 0.8);  /* 16  px       */
 --type-size-base:      1.25rem;                                /* 20 px - Base */
 --type-size-large:     calc(var(--type-size-base)   * 1.5);    /* 30 px        */
 --type-size-x-large:   calc(var(--type-size-base)   * 1.75);   /* 35 px        */
