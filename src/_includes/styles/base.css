@@ -92,11 +92,11 @@ details h3 {
 }
 
 details > * + * {
-  margin-top: var(--space-small);
+  margin-block-start: var(--space-small);
 }
 
 details > * + h3 {
-  margin-top: var(--space-large);
+  margin-block-start: var(--space-large);
 }
 
 details h3 {
