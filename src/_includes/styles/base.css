@@ -70,6 +70,21 @@ p, li, details {
   color: var(--color-dark);
 }
 
+details p {
+  text-align: left;
+}
+
+details * + h3 {
+  margin-block-start: var(--space-large);
+}
+
+details small,
+details h2,
+details h3 {
+  display: block;
+  text-align: center;
+}
+
 details > * + * {
   margin-top: var(--space-small);
 }
