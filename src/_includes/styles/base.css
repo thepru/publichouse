@@ -106,10 +106,6 @@ article > * + details {
       margin-block-start: var(--space-large);
     }
 
-    details h3 {
-      font-size: var(--type-size-small) !important;
-    }
-
 
 /* END: Make Transcript typography appear more like a screenplay */
 
@@ -138,10 +134,6 @@ details > * + * {
 
 details > * + h3 {
   margin-block-start: var(--space-large);
-}
-
-details h3 {
-  font-size: var(--type-size-large);
 }
 
 details hr {
