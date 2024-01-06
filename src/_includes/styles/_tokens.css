@@ -9,7 +9,7 @@
 --typeface-secondary: vinyl, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 --typeface-mono: Consolas,Lucida Console,Courier,Monaco,monospace;
 
---type-size-mouse:     calc(var(--type-size-base)   * 0.625);  /* 10  px        */
+--type-size-mouse:     calc(var(--type-size-base)   * 0.625);  /* 10  px       */
 --type-size-small:     calc(var(--type-size-base)   * 0.75);   /* 12  px       */
 --type-size-base:      1.25rem;                                /* 20 px - Base */
 --type-size-large:     calc(var(--type-size-base)   * 1.5);    /* 30 px        */
@@ -33,5 +33,6 @@
 --color-light: hsla(0, 0%, 100%, 1);
 --color-tone-light: hsla(0, 0%, 80%, 1);
 --color-tone-dark: hsla(0, 0%, 50%, 1);
-
+--color-tone-overlay: hsla(0, 0%, 0%, .05);
+--color-tone-overlay-edge: hsla(0, 0%, 50%, 1);
 }

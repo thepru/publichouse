@@ -19,6 +19,15 @@ body {
     margin-block-start: var(--space-base);
     padding: var(--space-large);
   }
+  details * {
+    font-size: var(--type-size-base) !important;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  details {
+    padding-inline: var(--space-large) !important;
+    padding-block: var(--space-base) !important;
+    max-width: 48rem;
+  }
 }
 
 body > * + *, body article > * + * {
@@ -62,7 +71,7 @@ h1 + * {
   /* margin-block-start: var(--space-large); */
 }
 
-p, li, details {
+p, li {
   font-size: var(--type-size-base);
   font-family: var(--typeface-primary);
   font-weight: var(--typeface-primary-book);
@@ -70,11 +79,43 @@ p, li, details {
   color: var(--color-dark);
 }
 
-details h3 {
-  font-size: var(--type-size-base) !important;
-  font-weight: bold;
+article > * + details {
+  margin-block-start: var(--space-large);
 }
 
+/* START: Make Transcript appear more like a screenplay */
+
+    details {
+      margin: auto;
+      background-color: var(--color-tone-overlay);
+      border-radius: .5rem;
+      border-color:  var(--color-tone-overlay-edge);
+      border-style: solid;
+      border-width: 1px;
+      padding-inline: var(--space-base);
+      padding-block: var(--space-small);
+    }
+    
+    details * {
+      font-size: var(--type-size-small);
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    details h2 {
+      font-weight: bold;
+      margin-block-start: var(--space-large);
+    }
+
+    details h3 {
+      font-size: var(--type-size-small) !important;
+    }
+
+
+/* END: Make Transcript typography appear more like a screenplay */
+
+details summary {
+  cursor: pointer;
+}
 details p {
   text-align: left;
 }
