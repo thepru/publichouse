@@ -1,5 +1,6 @@
 node_modules
 _site/
+.nova/
 deploy.sh
 .DS_Store
 
