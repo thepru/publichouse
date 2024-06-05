@@ -2,7 +2,7 @@
 <html lang="en">
   {% include "../partials/head.html" %}
   <body class="{{ bodyClass }}">
-
+    <main>      
     {% include "../partials/logo.html" %}
 
     {% block content %}
@@ -10,6 +10,7 @@
         Here is some placeholder content that will render if a template doesn’t define a block.
       </p>
     {% endblock %}
+    </main>
   </body>
   {% include "../partials/boilerplate.html" %}
 </html>
