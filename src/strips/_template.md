@@ -20,7 +20,7 @@ Description…
 **PIGGINS ([about Piggins][p]):**  
  …The problem with the world is peeps think’n they gotta be big.
 
- **NEWT ([about Nest][n]):**  
+ **NEWT ([about Newt][n]):**  
  …
 
 **PIGGINS:**  
