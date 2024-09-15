@@ -3,6 +3,7 @@ title: "title"
 name: "000000"
 # date: 2024-01-06T10:10:00
 filetype: png
+transcript: true
 eleventyExcludeFromCollections: true # remove to publish
 ---
 
