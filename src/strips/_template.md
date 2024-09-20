@@ -7,9 +7,12 @@ transcript: true
 eleventyExcludeFromCollections: true # remove to publish
 ---
 
+{% include "partials/nav-strips.html" %}
+
 {% include "partials/strip.html" %}
 
-<details closed>
+
+<details open>
 <summary>Transcript</summary>
 
 ## {{ title }}
@@ -36,7 +39,5 @@ Description…
 <!-- [^1]: foo "bar" -->
 
 </details>
-
-{% include "partials/nav-strips.html" %}
 
 {% include "partials/reference-links.html" %}
