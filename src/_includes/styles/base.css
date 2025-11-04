@@ -252,6 +252,7 @@ a:focus, a:focus img {
   color: var(--color-dark);
 }
 
+/* Removed active to let focus-visible work */
 /* a:active, a:active img {
   color: var(--color-dark);
   outline-offset: .5rem;
