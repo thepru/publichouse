@@ -25,13 +25,13 @@ body {
   }
   details * {
     font-size: var(--type-size-base) !important;
-    font-family: 'AmericanTypewriter, Courier, monospace;
+    font-family: 'AmericanTypewriter', Courier, monospace;
   }
   details {
     padding-inline: var(--space-large) !important;
     padding-block: var(--space-base) !important;
     max-width: 48rem;
-  }
+  }|
 }
 
 body > * + *, body article > * + * {
@@ -39,7 +39,7 @@ body > * + *, body article > * + * {
   /* outline: red solid thin */
 }
 
-.logo svg {;
+.logo svg {
   max-width: 100%;
   width: 12.5rem;
   height: 3.96875rem;
@@ -221,6 +221,12 @@ nav {
 
 /* Link & Focus Styles. */
 
+/* :focus:not(:focus-visible) { outline: none } */
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Order tips via Eric Meyer: https://twitter.com/meyerweb/status/1279053893440282625 */
 
 a, a img {
@@ -246,11 +252,11 @@ a:focus, a:focus img {
   color: var(--color-dark);
 }
 
-a:active, a:active img {
+/* a:active, a:active img {
   color: var(--color-dark);
   outline-offset: .5rem;
   outline: var(--color-dark) solid thin;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   a, a img {
