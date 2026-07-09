@@ -63,6 +63,16 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addFilter("_xref", (pages, url) => {
+    return pages.find(page => page.url === url);
+  });
+  
+  eleventyConfig.addShortcode("xref", function (pages, url) {
+    const xrefFn = eleventyConfig.getFilter("_xref");
+    const page = xrefFn(pages, url);
+    return `<a href="${page.url}">${page.data.title}</a>`;
+  });
+
   // Template Config
   return {
     markdownTemplateEngine: 'njk',

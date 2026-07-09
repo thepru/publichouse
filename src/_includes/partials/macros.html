@@ -1,0 +1,4 @@
+{% macro xref(slug) %}
+  {% set $page = collections.all | _xref(slug) %}
+  Related to <a href="{{ $page.url | url }}">{{ $page.data.title }}</a>
+{% endmacro %}
