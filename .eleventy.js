@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
 
   //Passthrough Copy Files
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPassthroughCopy('./src/fonts/');
   eleventyConfig.addPassthroughCopy('./src/img/');
   eleventyConfig.addPassthroughCopy('./src/.htaccess');
   eleventyConfig.addPassthroughCopy('./src/humans.txt');
