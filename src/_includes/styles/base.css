@@ -53,6 +53,7 @@ body.archive .archiveLink {
 
 h1, h2, h3, h4 {
   color: var(--color-dark);
+  text-wrap: balance;
 }
 
 h1, h2 {
