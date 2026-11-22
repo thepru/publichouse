@@ -86,6 +86,7 @@ p, li {
 li {
   /* list-style-type: circle; */
   color: var(--color-tone-dark);
+  text-wrap: balance;
 }
 
 article > * + details {

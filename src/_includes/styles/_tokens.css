@@ -2,7 +2,7 @@
 
 /*----- Type -----*/
 
---typeface-primary: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+--typeface-primary: ui-serif, Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 --typeface-primary-book: 500;
 --typeface-primary-medium: 600;
 --typeface-secondary-regular: normal;
