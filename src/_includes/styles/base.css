@@ -83,6 +83,11 @@ p, li {
   color: var(--color-dark);
 }
 
+li {
+  /* list-style-type: circle; */
+  color: var(--color-tone-dark);
+}
+
 article > * + details {
   margin-block-start: var(--space-large);
 }
